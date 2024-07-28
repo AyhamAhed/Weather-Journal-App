@@ -1,0 +1,128 @@
+body {
+    background: #ffffff; /* Corrected background color */
+    font-family: -apple-system, BlinkMacSystemFont, 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    height: 100vh;
+    background: #f23557;
+    color: #f0d43a;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    grid-gap: 1em;
+    font-size: 20px;
+    padding: 1em; /* Add padding for spacing */
+}
+
+.holder {
+    width: 100%; /* Ensure holder takes full width */
+    max-width: 500px; /* Limit maximum width for better readability */
+    margin: 0 auto; /* Center align */
+}
+
+.entry {
+    background: rgba(59, 74, 107, 0.4);
+    padding: 1em;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+}
+
+#entryHolder {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: left;
+}
+
+#date, #temp, #content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.headline {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+/* Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    font-size: 27px;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    margin-bottom: 1em;
+    background: #22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and width are considered together */
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px #444;
+    cursor: pointer; /* Indicate clickable button */
+    transition: background 0.3s; /* Smooth transition for background change */
+}
+
+button:hover {
+    background: #28334a; /* Darken button on hover */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    height: 150px; /* Fixed height for better control */
+    resize: none; /* Prevent resizing for consistency */
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #f0d43a; /* Custom focus indicator */
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+}
